@@ -117,6 +117,6 @@ app.post("/deleted", (req,res)=>{
     }
 });
 
-app.listen(3000, (req,res)=>{
+app.listen(3000  || process.env.PORT, (req,res)=>{
     console.log("server started");
 });
